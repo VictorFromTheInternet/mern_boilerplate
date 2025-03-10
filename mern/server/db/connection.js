@@ -17,9 +17,11 @@ try{
 
     // send a ping to confirm a successful connection
     await client.db('admin').command({ping: 1}) 
-    console.log("Pinged your deplyment. You successfully connected to Mongodb")
+    console.log("Pinged your deployment. You successfully connected to Mongodb!")
 }catch(err){
     console.error(err)
 }
 
 let db = client.db('employees')
+
+export default db
